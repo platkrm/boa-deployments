@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata: # kpt-merge: example/default
+  name: default
+  namespace: userservice-dev
+  labels:
+    app: userservice
+  annotations:
+    internal.kpt.dev/upstream-identifier: '|ConfigMap|example|default'
+data:
+  ignore_missing_schemas: "true"
