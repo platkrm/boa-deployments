@@ -9,15 +9,15 @@ upstream:
   git:
     repo: git@github.com:platkrm/boa-team-blueprints
     directory: /frontend
-    ref: main
+    ref: v3
   updateStrategy: resource-merge
 upstreamLock:
   type: git
   git:
     repo: git@github.com:platkrm/boa-team-blueprints
     directory: /frontend
-    ref: main
-    commit: cf1fa8c9ecbfa182946ea4cf239feb173ddd4ea4
+    ref: frontend/v3
+    commit: 6d3d9e4283fd879575ab70033b3345e037a54bca
 info:
   description: sample description
 pipeline:
