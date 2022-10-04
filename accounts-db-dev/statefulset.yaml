@@ -18,7 +18,7 @@ metadata: # kpt-merge: example/base-db
   name: accounts-db
   labels:
     tier: db
-    app: accounts-db
+    app: accounts-db-dev
   namespace: accounts-db-dev
   annotations:
     internal.kpt.dev/upstream-identifier: apps|StatefulSet|example|base-db
@@ -28,12 +28,12 @@ spec:
   selector:
     matchLabels:
       tier: db
-      app: accounts-db
+      app: accounts-db-dev
   template:
     metadata:
       labels:
         tier: db
-        app: accounts-db
+        app: accounts-db-dev
     spec:
       serviceAccountName: default
       containers:

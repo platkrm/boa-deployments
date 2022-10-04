@@ -4,7 +4,7 @@ metadata: # kpt-merge: example/base-db
   name: accounts-db
   labels:
     tier: db
-    app: accounts-db
+    app: accounts-db-dev
   namespace: accounts-db-dev
   annotations:
     internal.kpt.dev/upstream-identifier: '|Service|example|base-db'
@@ -16,4 +16,4 @@ spec:
       protocol: TCP
   selector:
     tier: db
-    app: accounts-db
+    app: accounts-db-dev

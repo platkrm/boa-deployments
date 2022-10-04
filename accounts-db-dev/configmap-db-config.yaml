@@ -4,7 +4,7 @@ metadata: # kpt-merge: example/db-config
   name: db-config
   namespace: accounts-db-dev
   labels:
-    app: accounts-db
+    app: accounts-db-dev
   annotations:
     internal.kpt.dev/upstream-identifier: '|ConfigMap|example|db-config'
 data:
