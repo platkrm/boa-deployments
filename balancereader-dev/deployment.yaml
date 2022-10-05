@@ -4,17 +4,17 @@ metadata: # kpt-merge: example/base-app
   name: balancereader
   namespace: balancereader-dev
   labels:
-    app: balancereader
+    app: balancereader-dev
   annotations:
     internal.kpt.dev/upstream-identifier: apps|Deployment|example|base-app
 spec:
   selector:
     matchLabels:
-      app: balancereader
+      app: balancereader-dev
   template:
     metadata:
       labels:
-        app: balancereader
+        app: balancereader-dev
     spec:
       serviceAccountName: default
       terminationGracePeriodSeconds: 5
