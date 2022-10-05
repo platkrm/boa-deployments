@@ -9,15 +9,15 @@ upstream:
   git:
     repo: git@github.com:platkrm/boa-team-blueprints
     directory: /userservice
-    ref: v2
+    ref: v3
   updateStrategy: resource-merge
 upstreamLock:
   type: git
   git:
     repo: git@github.com:platkrm/boa-team-blueprints
     directory: /userservice
-    ref: userservice/v2
-    commit: 20d00317d6fdeb19a5e8823f237dab6317961cb7
+    ref: userservice/v3
+    commit: b4bd702f1f319e0cd7c0d14c801341ad3c705f9d
 info:
   description: sample description
 pipeline:
