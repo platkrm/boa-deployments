@@ -4,7 +4,7 @@ metadata: # kpt-merge: example/demo-data-config
   name: demo-data-config
   namespace: ledger-db-dev
   labels:
-    app: ledger-db
+    app: ledger-db-dev
   annotations:
     internal.kpt.dev/upstream-identifier: '|ConfigMap|example|demo-data-config'
 data:

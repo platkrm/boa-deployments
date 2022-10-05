@@ -4,7 +4,7 @@ metadata: # kpt-merge: example/base-db
   name: ledger-db
   labels:
     tier: db
-    app: ledger-db
+    app: ledger-db-dev
   namespace: ledger-db-dev
   annotations:
     internal.kpt.dev/upstream-identifier: '|Service|example|base-db'
@@ -16,4 +16,4 @@ spec:
       protocol: TCP
   selector:
     tier: db
-    app: ledger-db
+    app: ledger-db-dev
