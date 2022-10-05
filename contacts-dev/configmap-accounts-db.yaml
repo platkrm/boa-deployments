@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata: # kpt-merge: example/accounts-db-config
   name: accounts-db-config
   labels:
-    app: contacts
+    app: contacts-dev
   namespace: contacts-dev
   annotations:
     internal.kpt.dev/upstream-identifier: '|ConfigMap|example|accounts-db-config'

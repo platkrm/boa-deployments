@@ -4,17 +4,17 @@ metadata: # kpt-merge: example/base-app
   name: contacts
   namespace: contacts-dev
   labels:
-    app: contacts
+    app: contacts-dev
   annotations:
     internal.kpt.dev/upstream-identifier: apps|Deployment|example|base-app
 spec:
   selector:
     matchLabels:
-      app: contacts
+      app: contacts-dev
   template:
     metadata:
       labels:
-        app: contacts
+        app: contacts-dev
     spec:
       serviceAccountName: default
       terminationGracePeriodSeconds: 5
