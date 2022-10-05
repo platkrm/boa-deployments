@@ -4,7 +4,7 @@ metadata: # kpt-merge: example/service-api-config
   name: service-api-config
   namespace: ledgerwriter-dev
   labels:
-    app: ledgerwriter
+    app: ledgerwriter-dev
   annotations:
     internal.kpt.dev/upstream-identifier: '|ConfigMap|example|service-api-config'
 data:

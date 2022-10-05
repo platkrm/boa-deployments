@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata: # kpt-merge: example/ledger-db-config
   name: ledger-db-config
   labels:
-    app: ledgerwriter
+    app: ledgerwriter-dev
   namespace: ledgerwriter-dev
   annotations:
     internal.kpt.dev/upstream-identifier: '|ConfigMap|example|ledger-db-config'
