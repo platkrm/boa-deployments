@@ -4,13 +4,13 @@ metadata: # kpt-merge: example/base-app
   name: transactionhistory
   namespace: transactionhistory-dev
   labels:
-    app: transactionhistory
+    app: transactionhistory-dev
   annotations:
     internal.kpt.dev/upstream-identifier: '|Service|example|base-app'
 spec:
   type: LoadBalancer
   selector:
-    app: transactionhistory
+    app: transactionhistory-dev
   ports:
   - name: http
     port: 80
